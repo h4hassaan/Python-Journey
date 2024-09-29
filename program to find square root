@@ -1,0 +1,24 @@
+# Python Program to calculate the square root
+
+# Note: change this value for a different result
+num = 8 
+
+# To take the input from the user
+#num = float(input('Enter a number: '))
+
+num_sqrt = num ** 0.5
+print('The square root of',num,'is',num_sqrt)
+
+
+                 OR
+
+ # Importing the  math module
+import math
+
+num = 9
+
+# To take input from the user
+#num = int(input('Enter a number: '))
+
+num_sqrt = math.sqrt(num)
+print('The square root of {0} is {1}'.format(num ,num_sqrt))                
