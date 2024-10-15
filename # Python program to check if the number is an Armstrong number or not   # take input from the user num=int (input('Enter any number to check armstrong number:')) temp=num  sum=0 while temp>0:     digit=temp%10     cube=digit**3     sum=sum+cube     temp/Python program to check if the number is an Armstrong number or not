@@ -1,0 +1,31 @@
+# Python program to check if the number is an Armstrong number or not
+
+
+# take input from the user
+num=int (input('Enter any number to check armstrong number:'))
+temp=num 
+sum=0
+while temp>0:
+    digit=temp%10
+    cube=digit**3
+    sum=sum+cube
+    temp//=10
+if sum==num:
+    print(num,'is an armstrong number')
+else:
+    print(num,'is not an armstrong number')
+
+
+# take input from the user
+num=int (input('Enter any number to check armstrong number:'))
+temp=num 
+sum=0
+while temp>0:
+    digit=temp%10
+    cube=digit**3
+    sum=sum+cube
+    temp//=10
+if sum==num:
+    print(num,'is an armstrong number')
+else:
+    print(num,'is not an armstrong number')
