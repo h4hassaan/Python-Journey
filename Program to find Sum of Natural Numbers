@@ -1,0 +1,14 @@
+#sum of natural numbers upto num
+num=int(input("Enter any number:"))
+num1=num
+
+sum=0
+if num<0:
+    print("Please enter a positive number")
+else:
+    while num>=1:
+      sum+=num
+      num-=1
+    print("Sum of numbers ranging from ",num1,"to 1 is:",sum)
+        
+        
