@@ -1,0 +1,26 @@
+#Python Program to Make a Simple Calculator
+print("1 . Addition")
+print("2 . Subtraction")
+print("3 . Division")
+print("4 . Multiplication")
+option=int(input("Enter any operation:"))
+
+if(option in [1,2,3,4]):
+  num1=int(input("Enter first number :"))
+  num2=int(input("Enter second number :"))
+else:
+  print("Invalid operator:")
+
+
+if(option==1):
+  result=num1+num2
+  print(result)
+elif(option==2):
+  result=num1-num2
+  print(result)
+elif(option==3):
+  result=num1/num2
+  print(result)
+else:
+  result=num1*num2
+  print(result)
