@@ -1,0 +1,20 @@
+#PALINDROME NUMBER
+def palindrome(x):
+  start=0
+  end=len(x)-1
+
+
+  while start < end :
+      if num[start] != num [end]:
+        print(x," is not a palindrome ")
+        return
+      else:
+        start+=1
+        end-=1
+  print(x," is a palindrome ")
+
+
+num=input("Enter a word/number: ")
+palindrome(num)
+
+
