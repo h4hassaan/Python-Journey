@@ -1,0 +1,11 @@
+# Python program to convert decimal into other number systems
+dec = int(input("Enter the decimal number: "))
+bin = bin(dec)
+hex = hex(dec)
+oct = oct(dec)
+
+print(f"{dec} in binary ={bin}")
+print(f"{dec} in octal = {oct}")
+print(f"{dec} in hexadecimal = {hex}")
+
+
