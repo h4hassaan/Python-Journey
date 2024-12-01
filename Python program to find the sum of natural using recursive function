@@ -1,0 +1,12 @@
+# Python program to find the sum of natural using recursive function
+def myfunc(x):
+    if x <= 1:
+        return x
+    else:
+        return x + myfunc(x - 1)
+
+num = int(input('Enter a positive number: '))
+if num < 0:
+    print('Please enter a positive number.')
+else:
+    print("The sum is:", myfunc(num))
