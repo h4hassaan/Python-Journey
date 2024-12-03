@@ -12,4 +12,4 @@ if n < 0 or m < 0:
     print("Please enter positive integers for both n and m.")
 else:
     result = factorial_mod(n, m)
-    print(f"{n}! mod {m} = {result}")
+    print(f" {n}! mod {m} = {result}")
