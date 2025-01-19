@@ -1,0 +1,32 @@
+def getmarks():
+    a1 = int(input("Enter First assignment marks out of 100: "))
+    a2 = int(input("Enter Second assignment marks out of 100: "))
+    a3 = int(input("Enter Third assignment marks out of 100: "))
+    m = int(input("Enter Midterm marks out of 100: "))
+    f = int(input("Enter Final Exam marks out of 100: "))
+    return a1, a2, a3, m, f
+
+
+def assignmentaverage(as1, as2, as3):
+    average = (as1 + as2 + as3) / 3
+    return average
+
+
+def finalgrade(assignments, mids, finals):
+    total = (assignments * 0.25) + (mids * 0.25) + (finals * 0.5)
+    return total
+
+
+def main():
+    num = int(input("Enter the number of students: "))
+    for i in range(1, num + 1):
+        print(f"\n<<<<<<<<<<<<<<<<< STUDENT {i} DATA >>>>>>>>>>>>>>>>>>>")
+        stu_name = input("Enter student name: ")
+        as1, as2, as3, mids, finals = getmarks()
+        assignments = assignmentaverage(as1, as2, as3)
+        grade = finalgrade(assignments, mids, finals)
+        print(f"Grade of {stu_name} is: {grade:.2f}/100")
+
+
+if __name__ == "__main__":
+    main()
