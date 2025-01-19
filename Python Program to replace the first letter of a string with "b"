@@ -1,4 +1,4 @@
-name=input("Enter your name : ")
+name=input("Enter your name: ")
 str1=name[1:]
 str2="b"
 str=str2+str1
