@@ -1,0 +1,21 @@
+total_rows=int(input("Enter number of rows :")) # total no of rows
+
+for row_no in range (1,(row_no)+1): 
+    
+    for space in range (1,(total_rows - row_no)+1):# to display spaces 
+        print(" ",end="")
+    
+    for symbol in range (1,row_no+1):# to display *
+        print("*",end="")
+        
+    print()
+#spaces = total rows - row no 
+#symbol = row no 
+#assume that there are 5 rows and 5 columns then u can do this code
+
+
+    *
+   **
+  ***
+ ****
+*****
